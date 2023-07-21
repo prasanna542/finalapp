@@ -4,6 +4,10 @@ from sklearn.externals import joblib
 import numpy as np
 from flask_cors import CORS
 
+# from flask import Flask
+# app = Flask(__name__)
+
+
 app = Flask(__name__)
 CORS(app)
 
