@@ -59,13 +59,13 @@ def predict():
             )
             prediction = (clf.predict(input)).tolist()
             probability = (clf.predict_proba(input)).tolist()
-            return jsonify(
-                {
+            return jsonify(prediction)
+                
                     # 'probability': probability,
-                    'prediction': prediction,
+                    # 'prediction': prediction
                     # 'data': params
-                }
-            )
+                
+            
         except Exception as e:
             return jsonify({'error': str(e), 'trace': traceback.format_exc()})
     else:
