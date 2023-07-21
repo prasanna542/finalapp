@@ -61,9 +61,9 @@ def predict():
             probability = (clf.predict_proba(input)).tolist()
             return jsonify(
                 {
-                    'probability': probability,
+                    # 'probability': probability,
                     'prediction': prediction,
-                    'data': params
+                    # 'data': params
                 }
             )
         except Exception as e:
