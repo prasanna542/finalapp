@@ -63,7 +63,7 @@ def predict():
                 {
                     'probability': probability,
                     'prediction': prediction,
-                    # 'data': params
+                    'data': params
                 }
             )
         except Exception as e:
