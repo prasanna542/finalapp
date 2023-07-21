@@ -57,7 +57,7 @@ def predict():
                 float(params['heartRate'])
                 ]]
             )
-            prediction = (clf.predict(input)).tolist()
+            prediction = (clf.predict(input)).toString()
             probability = (clf.predict_proba(input)).tolist()
             return jsonify(
                 {
