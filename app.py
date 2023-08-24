@@ -62,7 +62,7 @@ def predict():
             return jsonify(
                 {
                     # 'probability': probability,
-                    'prediction': prediction,
+                    'prediction': prediction[0],
                     # 'data': params
                 }
             )
